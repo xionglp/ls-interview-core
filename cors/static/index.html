@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <h3>cors跨域</h3>
+
+  <script>
+    // 1.测试静态资源和api部署在同一个服务器下/CORS测试
+    // fetch('http://localhost:8000/users/list').then(async (res) => {
+    //   const result = await res.json()
+    //   console.log(result)
+    // })
+
+    // 2.从本地的localhost:3000请求api
+    fetch('api/users/list').then(async (res) => {
+      const result = await res.json()
+      console.log(result)
+    })
+  </script>
+  
+</body>
+</html>
