@@ -5,6 +5,8 @@ const static = require('koa-static')
 const app = new Koa()
 app.use(static('./static'))
 
+// cors: 跨域资源共享
+
 // app.use(async (ctx, next) => {
 //   // 设置cors基本信息
 //   ctx.set("Access-Control-Allow-Origin", '*')
