@@ -5,7 +5,8 @@ const static = require('koa-static')
 const app = new Koa()
 app.use(static('./static'))
 
-// cors: 跨域资源共享
+// cors: 跨域资源共享,
+// 跨域问题: 浏览器同源策略（协议、主机、端口）都相同称之为同源
 
 // app.use(async (ctx, next) => {
 //   // 设置cors基本信息
